@@ -1,0 +1,402 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #080808;
+  color: #fff;
+}
+.container {
+  padding: 10px 10%;
+}
+#name {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 1px 20px;
+  margin-top: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1 {
+  margin-top: 20px;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+/* ---------------about.html---------------- */
+#about {
+  padding: 80px 0;
+  color: gray;
+}
+.aboutme {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+.tap-links {
+  display: flex;
+  margin-top: 20px;
+}
+.links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.links::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: red;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.active-link {
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid violet; /* Red underline to persist */
+}
+/* .links:hover::after {
+  width: 100%;
+ 
+} */
+.tab-content {
+  margin-top: 20px;
+}
+.tab-content ul li {
+  text-decoration: none;
+  margin: 10px 0;
+}
+.tab-content ul li span {
+  color: red;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active-tab {
+  display: block;
+}
+#services {
+  padding: 10px 10%;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+#containerr {
+  padding: 10px 10%;
+}
+.containerr h1 {
+  margin-top: 40px;
+}
+.list-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: 300px;
+  transition: transform 0.5s;
+}
+.fnew {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 12px;
+  transition: height 0.5s;
+  border-radius: 15px;
+}
+
+.fnew h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.fnew a {
+  margin-top: 20px;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .fnew {
+  height: 100%;
+}
+.see {
+  display: flex;
+  margin: 50px auto;
+  width: fit fit-content;
+  text-align: center;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff004f;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  transition: background 0.5s;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+.see:hover {
+  background: #ff004f;
+}
+
+.contact-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-icons {
+  display: flex;
+  margin-top: 20px;
+}
+.contact-left h1 {
+  font-size: 40px;
+}
+.contact-left p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ababab;
+}
+.contact-icons a {
+  margin-right: 35px;
+  font-size: 30px;
+  color: #ababab;
+  display: inline-block;
+  transition: 0.5s;
+}
+.contact-icons a:hover {
+  color: #ff004f;
+  transform: translate(0, -5px);
+}
+.see.btnt {
+  display: inline-block;
+  background: #ff004f;
+}
+/* .contact-right {
+  justify-content: flex-end;
+
+  flex: 1;
+  display: flex;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.contact-right form{
+  margin-right: 105px;
+} */
+.contact-right form {
+  width: 95%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+
+  margin-top: 5px;
+  background: #262626;
+  border: 0;
+  color: #fff;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.contact-right form {
+  margin-left: 110px;
+}
+/* -----------------css small screens----------------- */
+nav .fas {
+  display: none;
+}
+nav .fa-regular {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+  }
+  #name {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav .fa-regular {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 100;
+    transition: right 0.5s ease-in-out;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  nav ul .fa-regular {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  nav ul .fa-circle-xmark {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .contact-right {
+    display: block;
+    left: 20px;
+  }
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .contact-right form {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+#msg {
+  margin-left: 120px;
+  margin-top: -30px;
+  display: block;
+  color: limegreen;
+}
